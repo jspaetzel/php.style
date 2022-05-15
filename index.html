@@ -48,17 +48,18 @@
     </div>
 </section>
 <section>
-    <div class="flex flex-col w-full max-w-3xl mx-auto prose text-left">
-        <div class="w-full mx-auto">
-            <h2>What will PHPStyle do to your code? See a preview below </h2>
-            <div x-data="{ open: false }" x-cloak>
-                <div class="mt-3 mx-auto rounded-lg sm:mt-0">
-                    <button class="items-center block px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                            @click="open = true">Click here to add some Style!
-                    </button>
-                </div>
-                <article class="prose py-5">
-                    <pre x-show="!open" style="margin-top: 0;"><code style="margin-top: 0;" class="language-php">class YourWorstNightmare {
+    <div class="container flex flex-col items-center px-5 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="flex flex-col w-full max-w-3xl mx-auto prose text-left">
+            <div class="w-full mx-auto">
+                <h2>What will PHPStyle do to your code? See a preview below </h2>
+                <div x-data="{ open: false }" x-cloak>
+                    <div class="mt-3 mx-auto rounded-lg sm:mt-0">
+                        <button class="items-center block px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                @click="open = true">Click here to add some Style!
+                        </button>
+                    </div>
+                    <article class="prose py-5">
+                        <pre x-show="!open" style="margin-top: 0;"><code style="margin-top: 0;" class="language-php">class YourWorstNightmare {
 /**   @var string    */
 var $private;
 public function __construct(){ $array = array(
@@ -73,7 +74,7 @@ public function __construct(){ $array = array(
 }
 
 $nightmare=new YourWorstNightmare() ;</code></pre>
-                    <pre x-show="open" style="margin-top: 0;"><code style="margin-top: 0;" class="language-php">class YourWorstNightmare
+                        <pre x-show="open" style="margin-top: 0;"><code style="margin-top: 0;" class="language-php">class YourWorstNightmare
 {
     /** @var string */
     public $private;
@@ -99,7 +100,8 @@ $nightmare=new YourWorstNightmare() ;</code></pre>
 }
 
 $nightmare = new YourWorstNightmare();</code></pre>
-                </article>
+                    </article>
+                </div>
             </div>
         </div>
     </div>
